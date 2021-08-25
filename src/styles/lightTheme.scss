@@ -1,0 +1,322 @@
+$backgroundColor: #ddd;
+$backColor: #f2f2f2;
+$frontColor: #fff;
+$textColor: #444;
+$iconsSize: 30px;
+
+
+.light {
+  h1 {
+    font-size: 24px;
+    color: $textColor;
+  }
+
+  span {
+    color: $textColor;
+  }
+
+  .app-wrapper {
+    max-width: 1200px;
+    height: 98vh;
+    margin: auto;
+    background: #eee;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 10px;
+
+    // sidebar
+    &__sidebar {
+      background: $backColor;
+      box-shadow: 2px 0 20px #bbb;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+      border-radius: 10px;
+
+      h1 {
+        margin: 3vh auto;
+      }
+    }
+
+    // main
+    &__main {
+      background: $backColor;
+
+      h1 {
+        margin: 15px 50px;
+        color: #777;
+      }
+    }
+
+  }
+
+  // Module Button
+  .button:active {
+    box-shadow: 0px 0px 0px 4px #ebebeb;
+  }
+
+  .button {
+    max-width: 90%;
+    height: 7vh;
+    background: $frontColor;
+    margin: 1vh auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 10px;
+
+
+    img {
+      width: 30px;
+      margin: auto;
+    }
+
+    span {
+      font-size: 20px;
+      margin: auto 0;
+    }
+  }
+
+  .tasks-wrapper {
+    max-height: 560px;
+    overflow-y: scroll; /////////////////////////////////////////////////////////
+  }
+
+
+  //Module task block
+  .task-wrapper {
+    min-height: 70px;
+    max-width: 700px;
+    background: $frontColor;
+    margin: 0 5% 1.5vh 5%;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__text.hide {
+      display: none;
+    }
+
+    &__text {
+      padding: 0 0 15px 100px;
+
+      span {
+        text-overflow: clip;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+
+    &__show {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 1fr 5fr 2fr;
+
+      &__mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: $iconsSize;
+        }
+
+        span {
+          display: block;
+          width: $iconsSize;
+          height: $iconsSize;
+          border-radius: 50%;
+          background: #ddd;
+        }
+      }
+
+      &__title {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-size: 24px;
+        text-overflow: clip;
+      }
+
+      &__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &__edit img {
+          width: $iconsSize;
+        }
+
+        &__delete img {
+          width: $iconsSize;
+        }
+
+        &__expand.hide img {
+          width: 15px;
+          transform: rotate(180deg);
+        }
+
+        &__expand img {
+          width: 15px;
+        }
+
+        div {
+          margin: auto;
+        }
+      }
+    }
+
+  }
+
+  //Add task button
+  .add-task-button:active {
+    box-shadow: 0px 0px 0px 5px #ebebeb;
+  }
+
+  .add-task-button {
+    cursor: pointer;
+    max-width: 700px;
+    background: $frontColor;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5vh 5%;
+
+    img {
+      width: $iconsSize;
+      margin: 20px 0px;
+    }
+  }
+
+  .add-task-wrapper {
+
+
+    &__body.hide {
+      transition: 0.5s;
+      display: none;
+    }
+
+    &__body {
+      transform: translateY(-450px);
+      transition: 1s;
+      transform: translateY(50px);
+      max-width: 700px;
+      margin: 0 40px;
+      margin-bottom: 1000px;
+
+      &__input {
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        background: $backColor;
+
+        span {
+          font-size: 24px;
+          margin: 10px auto;
+        }
+
+        textarea,
+        input {
+          font-family: cursive;
+          resize: none;
+          outline: none;
+          border: 4px solid $backgroundColor;
+          border-radius: 10px;
+          font-size: 20px;
+          padding: 10px;
+        }
+
+        textarea {
+          height: 200px;
+        }
+
+        input {
+          height: 50px;
+          font-size: 24px;
+        }
+
+      }
+
+      &__buttons {
+        display: flex;
+        justify-content: center;
+
+        &__save,
+        &__cancel {
+          width: 100px;
+          height: 50px;
+          background: $frontColor;
+          margin: 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &__save:active,
+        &__cancel:active {
+          box-shadow: 0px 0px 0px 5px #ebebeb;
+        }
+
+      }
+
+    }
+  }
+
+  .settings-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__toggle:active {
+      box-shadow: 0px 0px 0px 5px #ebebeb;
+    }
+
+    &__toggle {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      width: 200px;
+      height: 50px;
+      background: $frontColor;
+      border-radius: 10px;
+
+      img {
+        width: 50px;
+        margin: 0 10px;
+      }
+    }
+
+  }
+
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    &__contacts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 40px;
+      }
+      
+      span{
+        font-size: 24px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
