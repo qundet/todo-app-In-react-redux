@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.e68b38a0.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.e761b16c.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.e761b16c.chunk.js.map",
+    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.dfa14715.js",
+    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.dfa14715.js.map",
+    "static/js/2.d652bdcc.chunk.js": "/react-gh-pages/static/js/2.d652bdcc.chunk.js",
+    "static/js/2.d652bdcc.chunk.js.map": "/react-gh-pages/static/js/2.d652bdcc.chunk.js.map",
+    "index.html": "/react-gh-pages/index.html",
+    "static/css/main.e68b38a0.chunk.css.map": "/react-gh-pages/static/css/main.e68b38a0.chunk.css.map",
+    "static/js/2.d652bdcc.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.d652bdcc.chunk.js.LICENSE.txt",
+    "static/media/001-completed.9ffb0c3e.svg": "/react-gh-pages/static/media/001-completed.9ffb0c3e.svg",
+    "static/media/002-checked.9ba6ee70.svg": "/react-gh-pages/static/media/002-checked.9ba6ee70.svg",
+    "static/media/005-plus.d5048b9a.svg": "/react-gh-pages/static/media/005-plus.d5048b9a.svg",
+    "static/media/006-remove.562b6f7b.svg": "/react-gh-pages/static/media/006-remove.562b6f7b.svg",
+    "static/media/007-edit.8026fbba.svg": "/react-gh-pages/static/media/007-edit.8026fbba.svg",
+    "static/media/009-alltasks.b3bc6ae0.svg": "/react-gh-pages/static/media/009-alltasks.b3bc6ae0.svg",
+    "static/media/010-settings.f53fd2a5.svg": "/react-gh-pages/static/media/010-settings.f53fd2a5.svg",
+    "static/media/011-info.5e2fa24f.svg": "/react-gh-pages/static/media/011-info.5e2fa24f.svg",
+    "static/media/012-expand.c07433f9.svg": "/react-gh-pages/static/media/012-expand.c07433f9.svg",
+    "static/media/013-theme.025e77bd.svg": "/react-gh-pages/static/media/013-theme.025e77bd.svg",
+    "static/media/014-uncompleted.1d068bbf.svg": "/react-gh-pages/static/media/014-uncompleted.1d068bbf.svg",
+    "static/media/codewars.cf03c7e2.png": "/react-gh-pages/static/media/codewars.cf03c7e2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfa14715.js",
+    "static/js/2.d652bdcc.chunk.js",
+    "static/css/main.e68b38a0.chunk.css",
+    "static/js/main.e761b16c.chunk.js"
+  ]
+}
